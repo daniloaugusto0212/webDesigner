@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+/* div *{
+    color: red;
+} */
+
+
+.box{
+    width: 500px;
+    height: 500px;
+    background: grey;
+    position: relative;
+    left: 100px;
+}
+
+.box p{
+    position: relative;
+    left: 0;
+    top: 0;
+}

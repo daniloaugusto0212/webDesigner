@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{clear: both;}
+
+header{
+    background: #333;
+    padding: 8px 0;
+}
+
+.logo-desktop{
+    float: left;
+}
+
+.logo-desktop a{
+    color: #b6adad;
+    font-size: 22px;
+}
+
+.logo-desktop a:hover{
+    color: white;    
+}
+
+
+nav.mobile{
+    display: none;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 4px 16px;
+}
+
+nav.desktop a{
+    color: #b6adad;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    .logo-desktop,
+    nav.desktop{
+        display: none;
+    }
+
+    .logo-mobile a{
+        color: white;
+        font-size: 22px;
+    }
+
+    nav.mobile{
+        position: relative;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    nav.mobile h3{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #b6adad;
+    }
+
+    nav.mobile ul{
+        display: none;
+        background: black;
+        position: absolute;
+        left: -2%;
+        top: 29px;
+        width: 104%;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        margin: 0 35px;
+        padding: 8px 0;
+        border-top:1px solid #646464;
+        text-align: left;
+    }
+
+    nav.mobile a{
+        color: #b6adad;
+        text-decoration: none;
+        
+    }
+
+    nav.mobile a:hover{
+        color: white;
+        text-decoration: none;
+        
+    }
+}

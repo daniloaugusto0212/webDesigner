@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo/css/all.css">
+    <title>Menu | UI/UX</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop"><a href="index.html"><i class="fab fa-apple"></i></a></div>
+            <nav class="desktop">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>                    
+                </ul>
+            </nav>
+
+            <nav class="mobile">
+                <div class="logo-mobile"><a href="index.html"><i class="fab fa-apple"></i></a></div>
+                <h3><i class="fa fa-bars"></i></h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a href="">Contato</a></li>                    
+                </ul>
+            </nav>
+            <div class="clear"></div>
+        </div><!--container-->
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $('nav.mobile h3').click(function(){
+            $('nav.mobile ul').slideToggle();
+        })
+    </script>  
+</body>
+</html>

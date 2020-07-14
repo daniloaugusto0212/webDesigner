@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section.bg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+a.cta{
+    width: 95%;
+    max-width: 600px;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #E73A43;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+}

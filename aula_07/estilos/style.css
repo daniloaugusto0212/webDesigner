@@ -1,0 +1,8 @@
+.el1{
+    display: inline-block; /*Na mesma linha*/
+    /*display: block; /*Na outra linha*/
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+}
