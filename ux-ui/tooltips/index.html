@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/css/all.css">
+    <title>Tooltips | UX/UI</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+
+        .container p{
+            margin-top: 10px;
+        }
+
+        p.tooltipbox{
+            display: inline-block;
+            cursor: pointer;
+            position: relative;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .tooltip{
+            opacity: 0;
+            position: absolute;
+            width: 120px;
+            padding: 3px 4px;
+            top: 16px;
+            right: -50px;
+            background: black;
+            color: white;
+            /* display: none; */
+            transition: 1s;
+            
+        }
+
+        p.tooltipbox:hover .tooltip{
+            opacity: 1;
+            right: 0;
+            /* display: block; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="tooltipbox"><span class="tooltip">Aqui vai a informação</span><i class="fa fa-info-circle"></i> Incididunt exercitation qui fugiat nulla veniam non sit cillum quis laborum dolore.</p>
+        <p>Laboris labore deserunt est cupidatat laborum ut incididunt velit elit tempor.Ullamco ullamco incididunt amet minim quis amet sint qui sint culpa ad ullamco qui aute.Enim occaecat ullamco cillum non eiusmod culpa elit nisi excepteur ex occaecat ad mollit.</p>
+    </div>
+</body>
+</html>
